@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.scrolltest.api.tests.Examples">
+      <class name="com.scrolltest.api.tests.TestPOSTPerson">
         <methods>
-          <include name="test_DELETE"/>
+          <include name="init"/>
+          <include name="testPOSTCreatePerson"/>
         </methods>
-      </class> <!-- com.scrolltest.api.tests.Examples -->
+      </class> <!-- com.scrolltest.api.tests.TestPOSTPerson -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

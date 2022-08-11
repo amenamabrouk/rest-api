@@ -24,9 +24,11 @@ public class Examples {
 	/**
 	 * REST API for testing
 	 * 
-	 * 1. URL: https://github.com/typicode/json-server 2. Command to install: npm
-	 * install -g json-server 3. Start json server: json-server --watch db.json 4.
-	 * Status code: https://restfulapi.net/http-status-codes/
+	 * 1. URL: https://github.com/typicode/json-server 
+	 * 2. Command to install: npm
+	 * Install -g json-server 
+	 * 3. Start json server: json-server --watch db.json 
+	 * 4.Status code: https://restfulapi.net/http-status-codes/
 	 * 
 	 * db.json: is a file created with default data
 	 * 
@@ -100,7 +102,7 @@ public class Examples {
 	}
 
 	@SuppressWarnings("unchecked")
-	// @Test
+	//@Test
 	public void test_PUT() {
 		/**
 		 * <-PUT-> is a method of modifying resources where the client sends data that
@@ -118,7 +120,7 @@ public class Examples {
 				.body(request.toJSONString()).when().put("/users:/4").then().statusCode(200).log().all();
 	}
 
-	@Test
+	//@Test
 	public void test_DELETE() {
 
 		baseURI = ("http://localhost:3000");
